@@ -419,6 +419,8 @@
 			<false/>
 			<key>PickerMode</key>
 			<string>External</string>
+			<key>PickerVariant</key>
+			<string>Auto</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -492,7 +494,7 @@
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<dict>
 				<key>DefaultBackgroundColor</key>
-				<string>00000000</string>
+				<data>AAAAAA==</data>
 				<key>UIScale</key>
 				<data>AQ==</data>
 			</dict>
@@ -503,12 +505,12 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
+				<key>csr-active-config</key>
+				<data>5wMAAA==</data>
 				<key>boot-args</key>
 				<string>brcmfx-country=#a igfxrpsc=1</string>
 				<key>prev-lang:kbd</key>
 				<data>emgtSGFuczoyNTI=</data>
-				<key>csr-active-config</key>
-				<data>5wMAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -533,25 +535,6 @@
 		<false/>
 		<key>LegacySchema</key>
 		<dict>
-			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
-			<array>
-				<string>EFILoginHiDPI</string>
-				<string>EFIBluetoothDelay</string>
-				<string>LocationServicesEnabled</string>
-				<string>SystemAudioVolume</string>
-				<string>SystemAudioVolumeDB</string>
-				<string>SystemAudioVolumeSaved</string>
-				<string>bluetoothActiveControllerInfo</string>
-				<string>bluetoothInternalControllerInfo</string>
-				<string>flagstate</string>
-				<string>fmm-computer-name</string>
-				<string>fmm-mobileme-token-FMM</string>
-				<string>fmm-mobileme-token-FMM-BridgeHasAccount</string>
-				<string>nvda_drv</string>
-				<string>prev-lang:kbd</string>
-				<string>efi-boot-device</string>
-				<string>efi-boot-device-data</string>
-			</array>
 			<key>8BE4DF61-93CA-11D2-AA0D-00E098032B8C</key>
 			<array>
 				<string>Boot0080</string>
@@ -559,6 +542,25 @@
 				<string>Boot0082</string>
 				<string>BootNext</string>
 				<string>BootOrder</string>
+			</array>
+			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
+			<array>
+				<string>SystemAudioVolumeDB</string>
+				<string>efi-boot-device-data</string>
+				<string>flagstate</string>
+				<string>LocationServicesEnabled</string>
+				<string>efi-boot-device</string>
+				<string>nvda_drv</string>
+				<string>SystemAudioVolumeSaved</string>
+				<string>fmm-mobileme-token-FMM-BridgeHasAccount</string>
+				<string>prev-lang:kbd</string>
+				<string>fmm-computer-name</string>
+				<string>EFILoginHiDPI</string>
+				<string>EFIBluetoothDelay</string>
+				<string>fmm-mobileme-token-FMM</string>
+				<string>bluetoothInternalControllerInfo</string>
+				<string>bluetoothActiveControllerInfo</string>
+				<string>SystemAudioVolume</string>
 			</array>
 		</dict>
 		<key>WriteFlash</key>
@@ -628,9 +630,11 @@
 			<key>AudioSupport</key>
 			<false/>
 			<key>MinimumVolume</key>
-			<integer>20</integer>
+			<integer>10</integer>
 			<key>PlayChime</key>
 			<string>Auto</string>
+			<key>SetupDelay</key>
+			<integer>0</integer>
 			<key>VolumeAmplifier</key>
 			<integer>0</integer>
 		</dict>
@@ -639,9 +643,9 @@
 		<key>Drivers</key>
 		<array>
 			<string>HfsPlus.efi</string>
+			<string>OpenCanopy.efi</string>
 			<string>OpenRuntime.efi</string>
 			<string>OpenUsbKbDxe.efi</string>
-			<string>OpenCanopy.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -732,8 +736,6 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>DeduplicateBootOrder</key>
-			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
